@@ -1,31 +1,20 @@
-# git training project
+# Git Training Project
 
-## Step 1: create github repository
-created a new repository called "git-training-project" on github checked the "add a readme file" box when creating it
+**Author:** Jayden Poyner
+**Email:** poynerj@gmail.com
 
-## Step 2: add maintainer
-added adberns as a maintainer through settings in collaborators
+This project is a simple Flask application that displays "Hello, World!"
 
-## Step 3: clone and create readme.md
-cloned the repository using the git clone command
-went into the folder using the cd command
-readme.md was already there because we checked the box when creating the repo
+## Build and Usage Instructions
 
-## Step 4: create branch and make changes
-already created the 'activity1' branch above
+Run these commands in Git Bash from the project folder.
 
-## Step 5: commit and push changes
-to commit the readme.md changes to this branch from the command line:
-git checkout -b activity1
-git add readme.md
-git commit -m "add activity1 branch creation command"
-git push origin activity1
+| Make Target | Description |
+|---|---|
+| `make setup` | Creates the virtual environment, installs the required packages, and sets up the Pylint hook. |
+| `make run` | Runs the Flask application. Open http://127.0.0.1:5000/ in a browser to view it. |
+| `make clean` | Removes the virtual environment and Python cache files. |
 
-## Step 6: create pull request 
-submit a pull request by clicking the pull request tab
+## License
 
-```bash
-git add readme.md
-git commit -m "add activity1 commands to readme"
-git push origin activity1
-```
+This project uses the MIT License. I chose it because it is simple and allows other people to use, modify, and share the code with few restrictions.
